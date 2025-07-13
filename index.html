@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ball.css">
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/card.css">
+    <title>Jeff's Birthday</title>
+
+    <script>
+      const correctPassword = "birthday";
+
+      function checkPassword() {
+        const userInput = prompt(`Enter the password:`);
+        if (userInput !== correctPassword) {
+          alert(`Oops! access denied`);
+          window.location.href ="https://www.google.com"; //redirect if incorrect
+        }
+      }
+      window.onload = checkPassword;
+    </script> 
+</head>
+<body>
+    <h1>HAPPY BIRTHDAY</h1>
+    <div class="container">
+        <div class="ball">J</div>
+        <div class="ball">E</div>
+        <div class="ball">F</div>
+        <div class="ball">F</div>
+      </div>
+
+      <div class="card">
+        <div class="outside">
+          <div class="frontface">
+            <h1>today is all<br>
+            about you..</h1>
+
+            <!--making cake-->
+            <div class="cake">
+              <div class="top-layer"></div>
+              <div class="middle-layer"></div>
+              <div class="bottom-layer"></div>
+              <div class="candle"></div>
+            </div>
+          </div>
+
+          <div class="backface">
+            <img src="02.JPG" alt="Endo Team" class="card__image"/>
+          </div>
+        </div>
+
+        
+        <div class="inside-content">
+          <span class="confetti"></span>
+          <span class="confetti"></span>
+          <span class="confetti"></span>
+          <span class="confetti"></span>
+          <span class="confetti"></span>
+          <span class="confetti"></span>
+          <span class="confetti"></span>
+          <span class="confetti"></span>
+          <span class="confetti"></span>
+          <span class="confetti"></span>
+          
+          <p>Wherever you go, 
+          <br>Whatever you do,
+          <br>Hope it's absolutely wonderful.</p>
+          <p>I always wish you all 
+          <br>the best in everything you do</p>
+          <h1 class="deserve-text">You deserve it !!</h1>
+          <h3 class="emoji">🎁🎈🎉</h3>
+          
+        </div>
+      </div>
+    
+      <audio id="song">
+        <source src="happy-birthday-266285.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <button class="btn" onclick="document.getElementById('song').play()">🎂 Play Song</button>
+    
+</body>
+</html>
