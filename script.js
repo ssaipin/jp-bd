@@ -1,4 +1,4 @@
-const correctPassword = "jeff";
+const correctPassword = "Jeff";
 
 function checkPassword() {
   const userInput = prompt("Enter the password:")
